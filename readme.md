@@ -16,7 +16,7 @@
 
 5 run 'npm install' in your terminal
 
-6 run 'npm install karma -g'
+6 run 'npm install karma-cli -g'
 
 7 run karma start
 
