@@ -1,3 +1,5 @@
+* Reminder for me, look at part2.md
+
 1 fork this repository
 
 2 download atom ide if you dont have it
