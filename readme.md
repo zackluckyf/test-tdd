@@ -20,4 +20,6 @@
 
 7 run karma start
 
-8 profit!
+8 look at part two's code kata which we will test drive
+
+https://github.com/guyroyse/vending-machine-kata
