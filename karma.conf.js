@@ -5,7 +5,7 @@ module.exports = function(config) {
     config.set({
 
         // base path that will be used to resolve all patterns (eg. files, exclude)
-        basePath: '',
+        basePath: './src',
 
 
         // frameworks to use
@@ -15,8 +15,7 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'script.js',
-            'script.spec.js'
+            './**/*.js',
         ],
 
 
@@ -26,13 +25,34 @@ module.exports = function(config) {
 
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-        preprocessors: {},
+        preprocessors: {
+            './**/*.js': ['coverage']
+        },
 
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress'],
+        reporters: ['spec', 'coverage'],
+
+        coverageReporter: {
+            type: 'html',
+            dir: '../coverage',
+            check: {
+                global: {
+                    statements: 50,
+                    branches: 50,
+                    functions: 50,
+                    lines: 50,
+                }
+            },
+            watermarks: {
+                statements: [50, 75],
+                functions: [50, 75],
+                branches: [50, 75],
+                lines: [50, 75]
+            }
+        },
 
 
         // web server port
