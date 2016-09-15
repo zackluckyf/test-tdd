@@ -24,4 +24,8 @@
 
 8 look at part two's code kata which we will test drive
 
-https://github.com/guyroyse/vending-machine-kata
+fizz buzz
+
+leap year
+
+roman numerals
