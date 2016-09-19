@@ -1,5 +1,3 @@
-* Reminder for me, look at part2.md
-
 1 fork this repository
 
 2 download atom ide if you dont have it
@@ -22,7 +20,7 @@
 
 7 run karma start
 
-8 look at part two's code kata which we will test drive
+8 look at part two's code katas which we will test drive
 
 fizz buzz
 
